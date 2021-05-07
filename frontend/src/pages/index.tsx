@@ -1,5 +1,8 @@
-import Head from 'next/head'
-import DataTable from '../components/DataTable'
+import Head from 'next/head';
+import React from 'react';
+import BarChart from '../components/BarChart';
+import DataTable from '../components/DataTable';
+import DonutChart from '../components/DonutChart';
 
 
 export default function Home() {
@@ -10,7 +13,24 @@ export default function Home() {
         <meta name="description" content="Projeto desenvolido na semana spring React" />
         <link rel="icon" href="/favicon.ico" />
       </Head>  
-      <h1 className="textPrimary">Hello Vendas</h1>
+      <h1 className="textPrimary py-3">Dashboard Vendas</h1>
+
+      <div className="row px-3">
+        <div className="col-sm-6">
+          <h5 className="text-center text-secondary">Taxa de sucesso</h5>
+          <BarChart />
+        </div>
+        <div className="col-sm-6">
+          <h5 className="text-center text-secondary">Taxa de sucesso</h5>
+          <DonutChart />
+        </div>
+      </div>
+      <div className="py3">
+        <h2 className="text-primary">
+          Todas as vendas
+        </h2>
+      </div>
+
       <DataTable />
     </div>  
   )
