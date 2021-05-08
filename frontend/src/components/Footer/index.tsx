@@ -1,7 +1,7 @@
 
 export default function Footer() {
     return (
-        <footer className="footer mt-5 bg-dark">
+        <footer className="footer py-3 mt-5 bg-dark">
             <div className="container">
                 <p className="text-light">
                     App desenvolvido por
