@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-export default function Home() {
+export default function Home(props) { 
   return (
     <div className="container my-5">
       <div className="jumbotron">
@@ -21,3 +21,12 @@ export default function Home() {
     </div>
   )
 }
+
+// export async function getServerSideProps() {
+//   console.log(process.env.NEXT_PUBLIC_BACKEND_URL)
+//   return {
+//     props: {
+//       URL: JSON.stringify(process.env.NEXT_PUBLIC_BACKEND_URL, null)
+//     }
+//   }
+// }

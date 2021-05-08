@@ -1,3 +1,4 @@
+import { GetServerSideProps } from "next"
 import { useEffect, useState } from "react"
 import { api } from "../../services/api"
 import { SalePage } from "../../types/sale"
