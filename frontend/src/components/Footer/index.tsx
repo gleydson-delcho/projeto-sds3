@@ -1,11 +1,11 @@
 
 export default function Footer() {
     return (
-        <footer className="footer mt-auto py-3 bg-dark">
+        <footer className="footer mt-5 bg-dark">
             <div className="container">
                 <p className="text-light">
                     App desenvolvido por
-                    <a href="https://github.com/gleydson-delcho" target="_blank" rel="noreferrer">
+                    <a className="mx-2" href="https://github.com/gleydson-delcho" target="_blank" rel="noreferrer">
                         Gleydson Delcho
                     </a>
                 </p>
@@ -14,7 +14,7 @@ export default function Footer() {
                         <strong>Semana Spring React</strong>
                         <br />
                         Evento promovido pela escola DevSuperior:
-                        <a href="https://instagram.com/devsuperior.ig" target="_blank" rel="noreferrer">
+                        <a className="mx-2" href="https://instagram.com/devsuperior.ig" target="_blank" rel="noreferrer">
                             @devsuperior.ig
                         </a>
                     </small>

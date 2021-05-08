@@ -1,37 +1,23 @@
-import Head from 'next/head';
 import React from 'react';
-import BarChart from '../components/BarChart';
-import DataTable from '../components/DataTable';
-import DonutChart from '../components/DonutChart';
-
+import Link from 'next/link';
 
 export default function Home() {
   return (
     <div className="container">
-      <Head>
-        <title>DSVendas</title>
-        <meta name="description" content="Projeto desenvolido na semana spring React" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>  
-      <h1 className="textPrimary py-3">Dashboard Vendas</h1>
-
-      <div className="row px-3">
-        <div className="col-sm-6">
-          <h5 className="text-center text-secondary">Taxa de sucesso</h5>
-          <BarChart />
-        </div>
-        <div className="col-sm-6">
-          <h5 className="text-center text-secondary">Taxa de sucesso</h5>
-          <DonutChart />
-        </div>
+      <div className="jumbotron">
+        <h1 className="display-4">DSVendas</h1>
+        <p className="lead">
+          Analise o desempenho das suas vendas por diferentes perspectivas
+                </p>
+        <hr />
+        <p>
+          Esta aplicação consiste em exibir um dashboard a partir de dados fornecidos
+          por um back end construído com Spring Boot.
+        </p>
+        <Link href="/dashboard" >
+          <a className="btn btn-primary btn-lg">Acessar o dashboard</a>
+        </Link>
       </div>
-      <div className="py3">
-        <h2 className="text-primary">
-          Todas as vendas
-        </h2>
-      </div>
-
-      <DataTable />
-    </div>  
+    </div>
   )
 }
