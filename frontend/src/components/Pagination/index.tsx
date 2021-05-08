@@ -9,7 +9,7 @@ type Props = {
 export default function Pagination({page, onPageChange}: Props) {
 
     return (
-        <div className="row d-flex">
+        <div className="d-flex justify-content-center">
             <nav>
                 <ul className="pagination">
                     <li className={`page-item ${page.first ? 'disable' : ''}`}>

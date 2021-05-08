@@ -25,7 +25,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="py3">
-                <h2 className="text-primary">
+                <h2 className="text-primary text-center">
                     Todas as vendas
         </h2>
             </div>
